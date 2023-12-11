@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-<style>
-
-  body{
-    margin-top: 0px;
-    padding-top: 0px;
-  }
-    header{
-        display: block;
-        background-color: rgb(50, 56, 40);
-        padding: 10px 0px 10px 0px;
-        color : white;
-        text-align: center;
-        
-        min-width: 100%;
-        margin-top: 0px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      margin-top: 0px;
+      padding-top: 0px;
     }
 
-    footer{
-        background-color: rgb(46, 45, 45);
-        padding: 10px 0px 10px 0px;
-        color : white;
-        text-align: center;
+    header {
+      display: block;
+      background-color: rgb(50, 56, 40);
+      padding: 10px 0px 10px 0px;
+      color: white;
+      text-align: center;
+
+      min-width: 100%;
+      margin-top: 0px;
     }
 
-    li{
-        display: inline-block;
-        background-color: grey;
+    footer {
+      background-color: rgb(46, 45, 45);
+      padding: 10px 0px 10px 0px;
+      color: white;
+      text-align: center;
     }
 
-    ul{
-        position: sticky;
-        top: 2px;
-        background-color: grey;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        width: 97%;
-        margin-right: 5px;
-        min-width: 20%;
+    li {
+      display: inline-block;
+      background-color: grey;
     }
 
-   
+    ul {
+      position: sticky;
+      top: 2px;
+      background-color: grey;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      width: 97%;
+      margin-right: 5px;
+      min-width: 20%;
+    }
+
+
     li .dropbtn {
       display: inline-block;
       color: white;
@@ -52,7 +53,7 @@
       text-decoration: none;
     }
 
-    li #Link_1 {
+    li #Home {
       display: inline-block;
       color: white;
       padding: 10px 10px;
@@ -92,165 +93,191 @@
       display: block;
     }
 
-    #layout{
-        margin: 2px;
-        border: 3px solid steelblue;
-        block-size: 470px;
-        background-size: cover;
-        animation-name: disp;
-        animation-duration: 30s;
-        animation-iteration-count: infinite;
-        
+    #animation {
+      margin: 2px;
+      border: 3px solid steelblue;
+      block-size: 470px;
+      background-size: cover;
+      animation-name: disp;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+
     }
 
     @keyframes disp {
-    0%{background-image: url(Images/Animation/ani1.jpg);}
-    25%{background-image: url(Images/Animation/ani2.png);}
-    50%{background-image: url(Images/Animation/ani3.jpg);}
-    75%{background-image: url(Images/Animation/ani4.jpg);}
-    100%{background-image: url(Images/Animation/ani5.jpg);}
-}
+      0% {
+        background-image: url(Images/Animation/ani1.jpg);
+      }
 
-.products{
-    display: inline-block;
-    background-color: whitesmoke;
-    width: 300px;
-    min-width: 150px;
-    border-radius: 5px;
-    box-shadow: 7px 7px 8px 0 rgba(0, 0, 0, 0.2);
-}
+      25% {
+        background-image: url(Images/Animation/ani2.png);
+      }
 
-.Images{
-    max-height: 50%;
-    width: 225px;
-    padding-left: 35px;
-}
+      50% {
+        background-image: url(Images/Animation/ani3.jpg);
+      }
 
-.cart{
-    width: 100%;
-    text-size-adjust: 10px;
-    border-radius: 5px;
-    border-color: lightseagreen;
-}
+      75% {
+        background-image: url(Images/Animation/ani4.jpg);
+      }
 
-b{
-color: orange;
-font-size: 15px;
-}
+      100% {
+        background-image: url(Images/Animation/ani5.jpg);
+      }
+    }
 
-b:hover {
-  font-size: 1.2em;
-}
+    .products {
+      display: inline-block;
+      background-color: whitesmoke;
+      width: 300px;
+      min-width: 150px;
+      border-radius: 5px;
+      box-shadow: 7px 7px 8px 0 rgba(0, 0, 0, 0.2);
+    }
 
-.cart:active {
-  background-color: rgb(250, 234, 230) ;
-  border-color: rgb(0, 255, 76);
-}
+    .Images {
+      max-height: 50%;
+      width: 225px;
+      padding-left: 35px;
+    }
 
+    .cart {
+      width: 100%;
+      text-size-adjust: 10px;
+      border-radius: 5px;
+      border-color: lightseagreen;
+    }
 
-</style>
+    b {
+      color: orange;
+      font-size: 15px;
+    }
+
+    b:hover {
+      font-size: 1.2em;
+    }
+
+    .cart:active {
+      background-color: rgb(250, 234, 230);
+      border-color: rgb(0, 255, 76);
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Pharmacy</h1>
-    </header>
+  <header>
+    <h1>Pharmacy</h1>
+  </header>
 
-    <ul>
+  <ul>
 
-        <li><a href="#" id="Link_1">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Our Medicines</a>
-          <div class="dropdown-link">
-            <a href="#">Fever</a>
-            <a href="#">Muscle Pains</a>
-            <a href="#">Cold & Cough</a>
-          </div>
-        </li>
-    
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Health Care</a>
-          <div class="dropdown-link">
-            <a href="#">Baby Care</a>
-            <a href="#">Skin Care</a>
-            <a href="#">Home Care</a>
-            <a href="#">Personal Care</a>
-            <a href="#">Pet Care</a>
-          </div>
-        </li>
-    
-        <li class="dropdown">
-            <a href="Details.html" class="dropbtn">Lab Test</a>
-            </div>
-          </li>
-    
-      </ul>
-
-      <div id="layout">
-
+    <li><a href="#" id="Home">Home</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Our Medicines</a>
+      <div class="dropdown-link">
+        <a href="#">Fever</a>
+        <a href="#">Muscle Pains</a>
+        <a href="#">Cold & Cough</a>
       </div>
+    </li>
 
-      <article><h3>Covid Care </h3><br>
-        <div class="products">
-            <h4 style="margin: 0px;">Covid Test Kit </h4><br>
-            <img class="Images"  style="margin: 0px; max-height: 195px; padding-left: 5px;" src="Images/Products/c1.jpg" alt="">
-            <br><h5 style="color: dodgerblue;"> Rs. 40<br> Offer Rs. 30/-</h5>
-            <button class="cart" type="submit"><b>Add to Cart</b></button>
-        </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Health Care</a>
+      <div class="dropdown-link">
+        <a href="#">Baby Care</a>
+        <a href="#">Skin Care</a>
+        <a href="#">Home Care</a>
+        <a href="#">Personal Care</a>
+        <a href="#">Pet Care</a>
+      </div>
+    </li>
 
-        <div class="products">
-            <h4 style="margin: 0px; padding-bottom: 63px; padding-left: 5px;">Covid Essentials </h4><br>
-            <img  class="Images"; src="Images/Products/c2.jpg" alt="">
-            <br><h5 style="color: dodgerblue;"> Rs. 240<br> Offer Rs. 170/-</h5>
-            <button class="cart" type="submit"><b>Add to Cart</b></button>
-        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="dropdown">
+      <a href="LabTestDetails.html" class="dropbtn">Lab Test</a>
+      </div>
+    </li>
 
-        <div class="products">
-            <h4 style="margin: 0px; padding-left: 5px;">Sanitizer Bottle </h4><br>
-            <img class="Images" style="margin-top: 0px; max-height: 195px; padding-top: 0px;" src="Images/Products/c3.jpg" alt="">
-            <br><h5 style="color: dodgerblue;"> Rs. 99<br> Offer Rs. 87/-</h5>
-            <button class="cart" type="submit"><b>Add to Cart</b></button>
-        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </ul>
 
-        <div style="margin: 0px; padding-left: 5px;" class="products">
-            <h4 style="margin: 0px; padding-bottom: 35px; ">Mask </h4><br>
-            <img class="Images" src="Images/Products/c4.jpg" alt="">
-            <br><h5 style="color: dodgerblue;"> Rs. 45<br> Offer Rs. 30/-</h5>
-            <button class="cart" type="submit"><b>Add to Cart</b></button>
-        </div>
-      </article>
+  <div id="animation">
 
-      <article><h3>Diabetes Care </h3><br>
-        <div class="products">
-            <h4 style="margin: 0px; padding-left: 5px;";>Powder </h4><br>
-            <img class="Images"; style="margin: 0px"; src="Images/Products/d1.jpg" alt="">
-            <br><h5 style="color: dodgerblue;"> Rs. 45<br> Offer Rs. 30/-</h5>
-            <button class="cart" type="submit"><b>Add to Cart</b></button>
-        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
 
-        <div style="margin: 0px; " class="products">
-            <h4 style="margin: 0px; padding-left: 5px;";>Chyawanprakash </h4><br>
-            <img class="Images"; src="Images/Products/d2.jpg" alt="">
-            <br><h5 style="color: dodgerblue;"> Rs. 45<br> Offer Rs. 30/-</h5>
-            <button class="cart" type="submit"><b>Add to Cart</b></button>
-        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <article>
+    <h3>Covid Care </h3><br>
+    <div class="products">
+      <h4 style="margin: 0px;">Covid Test Kit </h4><br>
+      <img class="Images" style="margin: 0px; max-height: 195px; padding-left: 5px;" src="Images/Products/c1.jpg"
+        alt="">
+      <br>
+      <h5 style="color: dodgerblue;"> Rs. 40<br> Offer Rs. 30/-</h5>
+      <button class="cart" type="submit"><b>Add to Cart</b></button>
+    </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <div class="products">
-            <h4 style="margin: 0px; padding-left: 5px;";>Colgate </h4><br>
-            <img class="Images"; src="Images/Products/d3.jpg" alt="">
-            <br><h5 style="color: dodgerblue;"> Rs. 45<br> Offer Rs. 30/-</h5>
-            <button class="cart" type="submit"><b>Add to Cart</b></button>
-        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="products">
+      <h4 style="margin: 0px; padding-bottom: 63px; padding-left: 5px;">Covid Essentials </h4><br>
+      <img class="Images" ; src="Images/Products/c2.jpg" alt="">
+      <br>
+      <h5 style="color: dodgerblue;"> Rs. 240<br> Offer Rs. 170/-</h5>
+      <button class="cart" type="submit"><b>Add to Cart</b></button>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <div class="products">
-            <h4 style="margin: 0px; padding-bottom: 128px; padding-left: 5px;";>Biscuits </h4><br>
-            <img class="Images"; src="Images/Products/d4.png" alt="">
-            <br><h5 style="color: dodgerblue;"> Rs. 35<br> Offer Rs. 30/-</h5>
-            <button class="cart" type="submit"><b>Add to Cart</b></button>
-        </div>
-      </article>
-    <br>
-    <footer>
-        @copyright. Only for demonstration purposes
-    </footer>
+    <div class="products">
+      <h4 style="margin: 0px; padding-left: 5px;">Sanitizer Bottle </h4><br>
+      <img class="Images" style="margin-top: 0px; max-height: 195px; padding-top: 0px;" src="Images/Products/c3.jpg"
+        alt="">
+      <br>
+      <h5 style="color: dodgerblue;"> Rs. 99<br> Offer Rs. 87/-</h5>
+      <button class="cart" type="submit"><b>Add to Cart</b></button>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div style="margin: 0px; padding-left: 5px;" class="products">
+      <h4 style="margin: 0px; padding-bottom: 35px; ">Mask </h4><br>
+      <img class="Images" src="Images/Products/c4.jpg" alt="">
+      <br>
+      <h5 style="color: dodgerblue;"> Rs. 45<br> Offer Rs. 30/-</h5>
+      <button class="cart" type="submit"><b>Add to Cart</b></button>
+    </div>
+  </article>
+
+  <article>
+    <h3>Diabetes Care </h3><br>
+    <div class="products">
+      <h4 style="margin: 0px; padding-left: 5px;" ;>Powder </h4><br>
+      <img class="Images" ; style="margin: 0px" ; src="Images/Products/d1.jpg" alt="">
+      <br>
+      <h5 style="color: dodgerblue;"> Rs. 45<br> Offer Rs. 30/-</h5>
+      <button class="cart" type="submit"><b>Add to Cart</b></button>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div style="margin: 0px; " class="products">
+      <h4 style="margin: 0px; padding-left: 5px;" ;>Chyawanprakash </h4><br>
+      <img class="Images" ; src="Images/Products/d2.jpg" alt="">
+      <br>
+      <h5 style="color: dodgerblue;"> Rs. 45<br> Offer Rs. 30/-</h5>
+      <button class="cart" type="submit"><b>Add to Cart</b></button>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div class="products">
+      <h4 style="margin: 0px; padding-left: 5px;" ;>Colgate </h4><br>
+      <img class="Images" ; src="Images/Products/d3.jpg" alt="">
+      <br>
+      <h5 style="color: dodgerblue;"> Rs. 45<br> Offer Rs. 30/-</h5>
+      <button class="cart" type="submit"><b>Add to Cart</b></button>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div class="products">
+      <h4 style="margin: 0px; padding-bottom: 128px; padding-left: 5px;" ;>Biscuits </h4><br>
+      <img class="Images" ; src="Images/Products/d4.png" alt="">
+      <br>
+      <h5 style="color: dodgerblue;"> Rs. 35<br> Offer Rs. 30/-</h5>
+      <button class="cart" type="submit"><b>Add to Cart</b></button>
+    </div>
+  </article>
+  <br>
+  <footer>
+    @copyright. Only for demonstration purposes
+  </footer>
 </body>
+
 </html>
