@@ -98,19 +98,19 @@
         <form id="details" action="#">
             <li>
                 <h3>1. Your Contact Details</h3>
-                <input type="text" placeholder=" Full Name" required>
-                <input type="text" placeholder=" Patient Id if exists"><br>
-                <input type="text" placeholder=" Contact Number" required>
-                <input type="email" placeholder=" Email id" required><br>
+                <input type="text" name=" Full Name " placeholder=" Full Name " required>
+                <input type="text" name=" Patient Id " placeholder=" Patient Id if exists "><br>
+                <input type="text" name=" Contact Number " placeholder=" Contact Number " required>
+                <input type="email" name=" Email id " placeholder=" Email id " required><br>
                 <br>
             </li>
             <li>
                 <h3>2. Address</h3>
-                <input type="text" placeholder=" H-No." required>
-                <input type="text" placeholder=" Street"><br>
-                <input type="text" placeholder=" Area" required><br><br>
+                <input type="text" name=" H-No. " placeholder=" H-No. " required>
+                <input type="text" name=" Street " placeholder=" Street "><br>
+                <input type="text" name=" Area " placeholder=" Area " required><br><br>
                 <label for="district" required><b>District</b></label><br><br>
-                <select class="district" type="text" style="width: 175px; height: 35px;">
+                <select class="district" name=" district " id="district" type="text" style="width: 175px; height: 35px;">
                     <option value="0" selected>Choose</option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
@@ -121,6 +121,7 @@
             </li>
             <li id="checkmessage">
                 <h3>3. Choose the Test Type.</h3>
+                    
                 <span class="tooltiptext">Check atleast one box without fail</span>
                 <br><label for="CBC">I. CBC</label>
                 <input type="checkbox" name="CBC" id="CBC"><br>
@@ -136,9 +137,9 @@
             </li>
             <li>
                 <h3>4. Do you want a hard copy of the report also?</h3>
-                <label for="HD">Yes</label>
+                <label for="HD1">Yes</label>
                 <input type="radio" name="HD" id="HD1"><br>
-                <label for="HD">No</label>
+                <label for="HD2">No</label>
                 <input checked type="radio" name="HD" id="HD2"><br>
             </li>
             <h3>4. Select Your Comfortable Date and Time</h3>
