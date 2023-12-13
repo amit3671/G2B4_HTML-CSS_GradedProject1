@@ -1,164 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Details</title>
-    <style>
-        body {
-            min-width: 1100px;
-        }
-
-        input {
-            padding-top: 8px;
-            padding-bottom: 8px;
-            margin-top: 6px;
-            border: none;
-            border-bottom: 1px solid rgb(85, 85, 85);
-        }
-
-        input:focus {
-            opacity: 0.35;
-            background-color: transparent;
-        }
-
-        select:focus {
-            opacity: 0.35;
-            background-color: transparent;
-        }
-
-        li {
-            list-style-type: none;
-        }
-
-        button {
-            margin-top: 16px;
-            margin-bottom: 6px;
-            border-radius: 2px;
-            background-color: blueviolet;
-            color: white;
-            border: none;
-        }
-
-        #image {
-            background-image: url(Images/Lab-Test/lab-test.jpg);
-            width: 47%;
-            height: 91.5%;
-            float: left;
-            position: fixed;
-            left: 45%;
-            margin-right: 0%;
-            padding-right: 0%;
-            margin-top: 4px;
-            image-resolution: auto;
-        }
-
-
-        #details {
-            Overflow-y: scroll;
-            background-color: white;
-            float: left;
-            width: 90.3%;
-            max-height: 35.4em;
-            padding-left: 30px;
-            box-shadow: 2px 3px 5px 10px rgba(0, 0, 0, 0.2);
-            margin-top: 4px;
-            margin-left: 15px;
-        }
-
-        #Rstbutton {
-            float: left;
-            margin-left: 100px;
-        }
-
-        #Subbutton {
-            float: left;
-            margin-left: 30px;
-        }
-
-        #checkmessage .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: red;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 2px;
-        }
-
-        #checkmessage:hover .tooltiptext {
-            visibility: visible;
-        }
-    </style>
+    <link rel="stylesheet" href="./labform.css">
+    <title>Lab Test Form</title>
 </head>
-
 <body>
-
-    <article style="max-height: 400px; ">
-        <form id="details" action="#">
-            <li>
-                <h3>1. Your Contact Details</h3>
-                <input type="text" name=" Full Name " placeholder=" Full Name " required>
-                <input type="text" name=" Patient Id " placeholder=" Patient Id if exists "><br>
-                <input type="text" name=" Contact Number " placeholder=" Contact Number " required>
-                <input type="email" name=" Email id " placeholder=" Email id " required><br>
-                <br>
+    <header><h1>Pharmacy</h1></header>
+    <section>
+    <nav class="navigate" id="navigate">
+        <ul class="menu">
+            <li><a href="./pharmacy.html">Home</a></li>
+            <li><a href="#">Our Medicines</a>
+                <ul id="dropdown">
+                    <li><a href="#">Fever</a></li>
+                    <li><a href="#">Muscles Pain</a></li>
+                    <li><a href="#">Cold & Cough</a></li>
+                </ul>
             </li>
-            <li>
-                <h3>2. Address</h3>
-                <input type="text" name=" H-No. " placeholder=" H-No. " required>
-                <input type="text" name=" Street " placeholder=" Street "><br>
-                <input type="text" name=" Area " placeholder=" Area " required><br><br>
-                <label for="district" required><b>District</b></label><br><br>
-                <select class="district" name=" district " id="district" type="text" style="width: 175px; height: 35px;">
-                    <option value="0" selected>Choose</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                    <option value="4">Option 4</option>
+            <li><a href="#">Health Care</a>
+            <ul id="dropdown">
+                <li><a href="#">Baby Care</a></li>
+                <li><a href="#">Skin Care</a></li>
+                <li><a href="#">Home Care</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Pet Care</a></li>
+            </ul></li>
+            <li><a href="./labtestform.html">Lab Test</a></li>
+        </ul>
+    </nav>
+</section>
+<div class="container">
+    <div class="left-side">
+        <form id="Lab Test Form" action="" method="">
+            <h2>Lab Test Form</h2>
+            <h3>Contact Details</h3>
+            <div class="form-group">
+               
+         
+                <input type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name" required>
+     
+                
+                <input type="text" id="patientId" name="patientId" placeholder="Patient Id (if exists)">
+            </div>
+    
+            <div class="form-group">
+               
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="Contact Number" required>
+                <input type="email" id="email" name="email" placeholder="Enter email id" required>
+            </div>
+    
+            <h3>Address</h3>
+    
+            <div class="form-group">
+                
+                <input type="text" id="houseNumber" name="houseNumber" placeholder="H.No." required>
+           
+               
+                <input type="text" id="street" name="street" placeholder="Street" required>
+            </div>
+    
+            <div class="form-group">
+              
+                <input type="text" id="area" name="area" placeholder="Area/City" required>
+                <input type="text" id="pin" name ="pin" placeholder="Pincode" required>
+            </div>
+    
+            <div class="form-group">
+               
+                <select id="district" name="district" required>
+                    <option value="" disabled selected>Choose</option>
+                    <!-- Add more district options as needed -->
+                    <option value="mumbaicity">Mumbai City</option>
+                    <option value="mumbaisub">Mumbai Suburban</option>
+                    <option value="thane">Thane</option>
+                    <option value="raigad">Raigad</option>
+                    <option value="palghar">Palghar</option>
+                    <option value="ratnagiri">Ratnagiri</option>
                 </select>
-                <br><br>
-            </li>
-            <li id="checkmessage">
-                <h3>3. Choose the Test Type.</h3>
-                    
-                <span class="tooltiptext">Check atleast one box without fail</span>
-                <br><label for="CBC">I. CBC</label>
-                <input type="checkbox" name="CBC" id="CBC"><br>
-                <label for="Complete_Urine">II. Complete Urine</label>
-                <input type="checkbox" name="Complete_Urine" id="Complete_Urine"><br>
-                <label for="CBC">III. Lipid Profile</label>
-                <input type="checkbox" name="Lipid_Profile" id="Lipid_Profile"><br>
-                <label for="TSH">IV. Thyroid Stimulating Hormone(TSH)</label>
-                <input type="checkbox" name="TSH" id="TSH"><br>
-                <label for="Glucose_Test">V. Glucose Test</label>
-                <input type="checkbox" name="Glucose_Test" id="Glucose_Test"><br>
-                <br>
-            </li>
-            <li>
-                <h3>4. Do you want a hard copy of the report also?</h3>
-                <label for="HD1">Yes</label>
-                <input type="radio" name="HD" id="HD1"><br>
-                <label for="HD2">No</label>
-                <input checked type="radio" name="HD" id="HD2"><br>
-            </li>
-            <h3>4. Select Your Comfortable Date and Time</h3>
-            <label for="date">Date</label>
-            <input type="date" name="date" id="date" required><br>
-            <label for="time">No</label>
-            <input type="time" name="time" id="time" required><br>
-            <button id="Rstbutton" type="reset">Reset</button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button id="Subbutton" type="submit">Submit</button>
-            <br><br><br><br>
-
+            </div>
+    
+            <div class="form-group">
+                <label>Choose the Test Type: <span>(Check atleast one box without fail)</span>
+                </label>
+                <div class="test-types">
+                    <label ><input type="checkbox" name="testType" value="CBC"> CBC</label>
+                    <label ><input type="checkbox" name="testType" value="CompleteUrine"> Complete Urine</label>
+                    <label ><input type="checkbox" name="testType" value="LipidProfile"> Lipid Profile</label>
+                    <label ><input type="checkbox" name="testType" value="TSH"> Thyroid Stimulating Hormone (TSH)</label>
+                    <label ><input type="checkbox" name="testType" value="GlucoseTest"> Glucose Test</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label>Do you want a hard copy of the report?</label>
+                <label><input type="radio" name="hardCopy" value="Yes"> Yes</label>
+                <label><input type="radio" name="hardCopy" value="No"> No</label>
+            </div>
+    
+            <div class="form-group">
+                <label for="date">Select Your Comfortable Date and Time:</label>
+                <input type="date" id="date" name="date" required>
+                <input type="time" id="time" name="time" required>
+            </div>
+    
+            <div class="form-group">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
         </form>
+    </div>
+    
 
-        <div id="image">
-
-        </div>
-
-    </article>
+    <div class="fixed-image">
+       
+        <img src="./Images/Lab-Test/lab-test.jpg" alt="Fixed Image">
+    </div>
+</div>
 </body>
-
 </html>
